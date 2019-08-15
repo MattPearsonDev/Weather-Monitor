@@ -15,7 +15,7 @@ def print_weather(result,city):
 		print("{}'s Current Temp: {},".format(city,result['main']['temp']), "{}'s Humidity: {}%, ".format(city,result['main']['humidity']), str(currentDT), file=open("officetemp.db", "a") )
 		time.sleep(300)
 def main():
-	city='Joondalup'
+	city='Melbourne'
 	print()
 	try:
 	  query='q='+city; 
